@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.mainbox {
+    background: url("camera1.jpg");
+    height: 100vh;
+    background-size: cover;
+    font-size: 20px;
+}
+.butn_one {
+    font-width: 700;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.sidebar_menu {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    color: rgba(255, 255, 255, 0.656);
+    background-size: cover;
+    background-color: rgba(0, 4, 5, 0.561);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+    left: -350px;
+    transition:all 0.3s linear;
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    color: white;
+    box-shadow: white;
+    color: rgba(255, 255, 255, 0.713);
+    height:60px;
+}
+
+.sidebar_menu .logo a {
+    color: white;
+    position: absolute;
+    left: 50px;
+    font-size: 20px;
+    font-weight: 500px;
+    text-decoration: none;
+}
+
+.sidebar_menu .btn_2 i {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    cursor: pointer;
+
+}
+
+.sidebar_menu .menu {
+
+    width: 100%;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.713);
+    font-size: 20px;
+    top: 90px;
+}
+/*.sidebar_menu .logo a:hover{
+     transform:scale(1.5); 
+     border-radius: 15px;  
+}*/
+
+.sidebar_menu .menu li {
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    bottom: 50px;
+}
+
+.sidebar_menu .menu li,a {
+    text-decoration: none;
+    color: rgb(198, 196, 196);
+    margin-left: 10px;
+}
+
+.sidebar_menu .social_media{
+
+    color: white;
+    position:center;
+    padding-bottom: 20px;
+    opacity: 0.5;
+    margin-left: 25%;
+   position:absolute;
+   bottom:20px;
+    
+}
+.sidebar_menu .social_media i{
+    color:white;
+}
+
+.sidebar_menu .social_media a {
+    color: rgb(207, 201, 201);
+}
+
+#check {
+    display: none;
+}
+
+.sidebar_menu .menu li,a:hover {
+    box-shadow: 0 0 10px rgba(137, 133, 133, 0.9);
+    
+    
+}
+
+
+.butn_one i:hover {
+    box-shadow: 0 0 10px rgba(161, 156, 156, 0.9);
+    cursor:pointer;
+}
+
+.sidebar_menu .btn_2 i:hover {
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media a,i:hover {
+    opacity:1;
+    transform:scale(1);
+    color:rgba(255, 255, 255, 0.954);
+}
+.sidebar_menu .social_media i:hover{
+    color: white;
+    font-size: 20px;
+}
+#check:checked ~ .sidebar_menu{
+ left:0;
+}
+#check:checked ~ .sidebar_menu .butn_one i{
+    opacity:0;
+}
+#check:checked ~ .sidebar_menu .btn_2 i{
+    opacity:1;
+}
+
